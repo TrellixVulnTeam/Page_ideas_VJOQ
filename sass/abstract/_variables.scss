@@ -1,0 +1,12 @@
+$colors: (
+  main: #3380a8,
+  main-light: lighten(#3380a8, 15%),
+  main-dark: darken(#3380a8, 15%),
+  dark-main: #15202b,
+  light-main: #ddd,
+  white: white,
+  greyed-out: #4f5b68,
+);
+
+$font-main: "Noto Serif", serif;
+$font-secondary: "Montserrat", sans-serif;
