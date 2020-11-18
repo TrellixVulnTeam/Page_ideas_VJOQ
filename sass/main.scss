@@ -1,15 +1,7 @@
-@import "abstract/variables";
-@import "abstract/functions";
+@import "abstract";
 
-@import "base/base";
-@import "base/typography";
+@import "base";
 
-@import "components/button";
-@import "components/card";
+@import "components";
 
-@import "layout/footer";
-@import "layout/header";
-@import "layout/main-area";
-@import "layout/options-menu";
-@import "layout/preview-menu";
-@import "layout/structure";
+@import "layout";

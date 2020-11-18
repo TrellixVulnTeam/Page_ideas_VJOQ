@@ -1,0 +1,44 @@
+// VARIABLES
+$colors: (
+  main: #3380a8,
+  main-light: lighten(#3380a8, 15%),
+  main-dark: darken(#3380a8, 15%),
+  dark-main: #15202b,
+  grey-1: #ddd,
+  grey-2: darken(#ddd, 15%),
+  grey-3: darken(#ddd, 25%),
+  grey-4: transparentize(darken(#ddd, 65%), 0.4),
+  white: white,
+  greyed-out: #4f5b68,
+);
+
+// FUNCTIONS
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
+
+$font-main: "Noto Serif", serif;
+$font-secondary: "Montserrat", sans-serif;
+
+// MIXIN
+
+@mixin section-setting {
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+@mixin dark-box {
+  background-color: color(grey-4);
+  width: 90%;
+  margin: 1.5rem auto 2rem;
+  border-radius: 10px;
+  padding: 5px;
+  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.7);
+}
+
+@mixin tooltip {
+  position: absolute;
+  left: calc(100% + 0.8rem);
+
+  background-color: darken(color(grey-4), 20%);
+}

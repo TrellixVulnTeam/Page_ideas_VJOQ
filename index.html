@@ -4,73 +4,288 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Web Ideas by Sieger</title>
+    <link
+      rel="shortcut icon"
+      href="assets/Page ideas logo.svg"
+      type="image/x-icon"
+    />
+    <title>Web Ideas by Sergie</title>
   </head>
   <body>
     <div id="container">
       <div id="options-menu">
-        <div class="top-area">
-          logo
-          <form action="#" class="search">
-            <input type="text" placeholder="Search" />
-            <button>svg</button>
-          </form>
-        </div>
+        <form action="#" class="search">
+          
+          <input
+            type="text"
+            placeholder="Search a project"
+            class="search__input"
+          />
+          <img src="assets/Page ideas logo.svg" alt="logo" class="logo" />
+          <button class="search__button">
+            <svg viewBox="0 0 10 10" class="search__icon">
+              <use
+                xlink:href="assets/symbol-defs.svg#icon-magnifying-glass"
+              ></use>
+            </svg>
+          </button>
+          
+        </form>
+
         <div class="filter-section">
-          <h3 class="section-heading--lower">Filters image</h3>
-          <p class="greyed-out">image Under development</p>
-        </div>
-        <div class="functionalities-section">
-          <h3 class="section-heading--grey">Functionalities image</h3>
-          <div class="btn btn--functions">
-            <a href="" class="">image Figma Design</a>
-          </div>
-          <div class="btn btn--functions">image Light Theme</div>
-        </div>
-        <div class="more-resources">
-          <h3 class="section-heading section-heading--grey center">
-            Discover more resources
+          <h3 class="filter-section__heading">
+            Filters
+            <div class="tooltip" data-tooltip="Option currently unavailable.">
+              <svg viewBox="0 0 10 10" class="icon--info tooltip">
+                <use
+                  xlink:href="assets/symbol-defs.svg#icon-info-with-circle"
+                ></use>
+              </svg>
+            </div>
           </h3>
-          <div class="discovery-element">
-            image
-            <p class="grey-text">Github</p>
-            <p class="grey-text coming-soon">More coming soon...</p>
-          </div>
+
+          <p class="filter-section__text">
+            <svg viewBox="0 0 10 10" class="icon--tools">
+              <use xlink:href="assets/symbol-defs.svg#icon-tools"></use>
+            </svg>
+            Under development
+          </p>
         </div>
-        <footer id="footer">
-          © <span id="currentYear" onload="updateYear()"></span> by Sergie
+
+        <div class="functionalities-section">
+          <h3 class="functionalities-section__heading">
+            Features
+            <div
+              class="tooltip"
+              data-tooltip="Explore some of the features available. Learn more in the about section."
+            >
+              <svg viewBox="0 0 10 10" class="icon--info u-margin-left">
+                <use
+                  xlink:href="assets/symbol-defs.svg#icon-info-with-circle"
+                ></use>
+              </svg>
+            </div>
+          </h3>
+          <a href="https://www.figma.com/file/mPWEK5xtMFsNsMkYszfhxC/Page-Ideas-by-Sieger?node-id=0%3A1" target="_blank">
+          <button class="functionalities-section__btn click-effect">
+                <svg
+                viewBox="0 0 10 10"
+                class="functionalities-section__btn__icon"
+              >
+                <use xlink:href="assets/symbol-defs.svg#icon-figma"></use>
+              </svg>
+              <span class="functionalities-section__btn__text"
+                >Figma Design</span
+              ></a
+            >
+          </button>
+
+          
+            <button
+              id="lightButton"
+              class="functionalities-section__btn click-effect"
+            >
+              <svg viewBox="0 0 10 10" class="functionalities-section__btn__icon">
+                <use xlink:href="assets/symbol-defs.svg#icon-light-bulb"></use>
+              </svg>
+              <span class="functionalities-section__btn__text">Light Theme</span>
+            </button>
+          
+          
+        </div>
+        <div id="lightMessage" class="tooltip-light"></div>
+        <hr class="line" />
+
+        <div class="more-resources">
+          <h3 class="more-resources__heading">Discover more resources</h3>
+          <div class="more-resources__grid">
+            <a target="_blank" href="https://github.com/Sergie-AGA">
+              <button class="more-resources__grid__item click-effect">
+                <svg
+                  viewBox="0 0 100 100"
+                  class="more-resources__grid__item__icon"
+                >
+                  <use xlink:href="assets/symbol-defs.svg#icon-github"></use>
+                </svg>
+                <p class="more-resources__grid__item__label">Github</p>
+              </button>
+            </a>
+          </div>
+          <p class="more-resources__placeholder">More coming soon...</p>
+        </div>
+
+        <hr class="line" />
+
+        <footer class="footer">
+          © <span id="currentYear" onload="updateYear()"></span> Page ideas by Sergie
         </footer>
       </div>
 
       <div id="main-area">
         <header>
-          <h1>Page Ideas by Sieger</h1>
-          <h2>Exploring ideas for your web project</h2>
-          <nav>
-            <div class="btn btn--main">image Page Ideas</div>
-            <div class="btn btn--main">image About</div>
-            <div class="btn btn--main btn--grey">image My Profile</div>
-          </nav>
+          <h1 class="main-title">Page Ideas by Sergie</h1>
+          <h2 class="subtitle">Exploring ideas for your web project</h2>
         </header>
-        <div class="main-area__main-content">Placeholder</div>
-      </div>
+        <nav>
+          <button id="pagesButton" class="btn btn--main btn--active click-effect">
+            <svg viewBox="0 0 10 10" class="btn--main__icon">
+              <use xlink:href="assets/symbol-defs.svg#icon-file-text"></use>
+            </svg>
+            <span class="btn--main__text">Pages</span>
+          </button>
+          <button id="aboutButton"class="btn btn--main click-effect">
+            <svg viewBox="0 0 10 10" class="btn--main__icon">
+              <use xlink:href="assets/symbol-defs.svg#icon-light-bulb"></use>
+            </svg>
+            <span class="btn--main__text">About</span>
+          </button>
+          <button
+          id="accountButton"
+            class="btn btn--main tooltip"
+            disabled
+            data-tooltip="Option currently unavailable."
+          >
+            <svg viewBox="0 0 10 10" class="btn--main__icon">
+              <use xlink:href="assets/symbol-defs.svg#icon-user"></use>
+            </svg>
+            <span class="btn--main__text">Account</span>
+          </button>
+        </nav>
 
-      <div id="preview-section">
-        <div class="preview-view">
-          <h3 class="section-heading">Preview</h3>
-          <div class="preview-view__placeholder">
-            Select a project to preview
+        <section class="main-content">
+          <div id="pagesSection" class="page-container active-section">
+          <div id="cardGrid" class="pages">
+
+            <!-- cards template
+              <div class="card">
+              <div class="card__image">
+                <img
+                  src="ideas/Bootstrap management site/assets/images/hands-1063442_1920.jpg"
+                  alt="Image of the project"
+                />
+              </div>
+              <h3 class="card__title">Title</h3>
+              <p class="card__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima,
+                nihil?
+              </p>
+              <button class="card__button">Access</button>
+            </div>
+
+            <div class="card">
+              <div class="card__image">
+                <img
+                  src="ideas/Bootstrap management site/assets/images/industry-3087393_1920.jpg"
+                  alt="Image of the project"
+                />
+              </div>
+              <h3 class="card__title">Title</h3>
+              <p class="card__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima,
+                nihil?
+              </p>
+              <button class="card__button">Access</button>
+            </div>
+            <div class="card">
+              <div class="card__image">
+                <img
+                  src="ideas/Bootstrap management site/assets/images/money-2724241_1920.jpg"
+                  alt="Image of the project"
+                />
+              </div>
+              <h3 class="card__title">Title</h3>
+              <p class="card__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima,
+                nihil?
+              </p>
+              <button class="card__button">Access</button>
+            </div>
+            <div class="card">
+              <div class="card__image">
+                <img
+                  src="ideas/Bootstrap management site/assets/images/paper-3213924_1920.jpg"
+                  alt="Image of the project"
+                />
+              </div>
+              <h3 class="card__title">Title</h3>
+              <p class="card__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima,
+                nihil?
+              </p>
+              <button class="card__button">Access</button>
+            </div> -->
           </div>
         </div>
-        <div class="preview-details">
-          <h3 class="project-title">Select a project</h3>
-          <p class="project-description">
-            Details of the project will be shown here
+          <div id="aboutSection" class="about">
+            <h2 class="about__heading">What is this?</h2>
+            <p class="about__text">
+              Welcome to Page Ideas by Sergie, a tool desgined to explore
+              different ideas for web development.
+            </p>
+            <p class="about__text">
+              Here you will be able to find web pages designed for different
+              types of businesses and with a multitude of web technologies so
+              you can get inspired and hopefully learn a few neat tricks.
+            </p>
+            <p class="about__text">
+              This is an ongoing project being constantly updated. Come back
+              regularly for new exciting features and the latest knowledge on
+              web development!
+            </p>
+            <p class="about__text">
+              Upcoming features: Responsivity, Filters, Preview, Extra
+              resources, Customized experience, animations and more!
+            </p>
+            <h2 class="about__heading">How to use the site</h2>
+            <h3 class="about__subheading">Exploring a project</h3>
+            <p class="about__text">
+              Simply select any of the cards on the Pages menu and see their
+              details on the preview column. Click on the "access" button to
+              enter the project
+            </p>
+            <h3 class="about__subheading">Extra features</h3>
+            <p class="about__text">
+              We currently have 2 features available for you.
+            </p>
+            <p class="about__text">
+              Figma Design is where you can see the initial wireframing version
+              that was used for this project, so maybe you can get a few ideas
+              from this tool
+            </p>
+            <p class="about__text">
+              Light theme is... Well, we prefer to not talk about that
+            </p>
+            <h3 class="about__subheading">More Resources</h3>
+            <p class="about__text">
+              Want to discover more interesting resources for ideas on what you
+              can do on the web? We periodically update this page with more
+              options for you to explore
+            </p>
+          </div>
+        </section>
+      </div>
+
+      <div class="preview">
+       
+
+        <div class="preview__details">
+          <h3 id="previewTitle" class="preview__details__title">Select a project</h3>
+          <p id="previewDescription" class="preview__details__description">
+            Details of the project will be shown here.
           </p>
-        </div>
+         </div>
       </div>
     </div>
 
+    <div class="unavailable">
+     
+        <h3 class="unavailable__heading">
+       Smaller screens not supported yet!</h3>
+      <p class="unavailable__text"> Responsiveness is not yet supported in this project! As this is mainly aimed at developers, the project was built in a desktop-first approach. Please visualize the page in a larger screen-size. I apologise for the inconvenience, but rest assured I will be updating this soon!</p>
+      <svg viewBox="0 0 10 10" class="unavailable__icon">
+        <use xlink:href="assets/symbol-defs.svg#icon-tools"></use>
+      </svg>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
