@@ -145,7 +145,7 @@ p {
 
 /* Jumbotron */
 .jumbotron {
-  background-image: url(/assets/pexels-rebrand-cities-1367269.jpg);
+  background-image: url(assets/pexels-rebrand-cities-1367269.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 700px;

@@ -121,7 +121,7 @@ button[disabled] {
     font-family: $font-secondary;
     font-size: 0.8rem;
     color: color(dark-main);
-    height: 3.5rem;
+    height: 4rem;
     margin-bottom: 0.5rem;
     font-weight: 400;
     overflow-wrap: break-word;
@@ -137,6 +137,7 @@ button[disabled] {
     margin: 1px 0.5rem 0.8rem;
     padding: 3px 7px;
     cursor: pointer;
+    display: block;
     &:hover {
       background-color: color(main-dark);
     }
