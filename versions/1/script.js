@@ -3,7 +3,7 @@ const pages = [
     {
         title: "Sales",
         description: "Feature under development",
-        image: "ideas/placeholder/assets/images/hands-1063442_1920.jpg",
+        image: "../../ideas/placeholder/assets/images/hands-1063442_1920.jpg",
         url: "https://www.facebook.com",
         techs: ["Bootstrap"],
         previewFrame: "test"
@@ -11,7 +11,7 @@ const pages = [
     {
         title: "Marketing",
         description: "Coming soon",
-        image: "ideas/placeholder/assets/images/industry-3087393_1920.jpg",
+        image: "../../ideas/placeholder/assets/images/industry-3087393_1920.jpg",
         url: "https://www.amazon.com",
         techs: ["SASS"],
         previewFrame: "test"
@@ -19,7 +19,7 @@ const pages = [
     {
         title: "Finance",
         description: "And this is what happens when we have a very long text that goes on and on, so much that it starts covering all of the available space and it seems it is going to overflow the containers and break any reasonable design, but no, look, the power of JavaScript allow us to implement a character limit that handles this",
-        image: "ideas/placeholder/assets/images/money-2724241_1920.jpg",
+        image: "../../ideas/placeholder/assets/images/money-2724241_1920.jpg",
         url: "https://www.netflix.com",
         techs: ["ReactJS"],
         previewFrame: "test"
@@ -27,7 +27,7 @@ const pages = [
     {
         title: "Human Resources",
         description: "Just a placeholder for future content",
-        image: "ideas/placeholder/assets/images/paper-3213924_1920.jpg",
+        image: "../../ideas/placeholder/assets/images/paper-3213924_1920.jpg",
         url: "https://www.google.com",
         techs: ["GatsbyJS"],
         previewFrame: "test"
