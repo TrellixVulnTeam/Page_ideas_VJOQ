@@ -12,13 +12,17 @@ $colors: (
   greyed-out: #4f5b68,
 );
 
+$font-main: "Noto Serif", serif;
+$font-secondary: "Montserrat", sans-serif;
+
+$tablet: 1024px;
+$mobile: 768px;
+$vertical: 550px;
+
 // FUNCTIONS
 @function color($color-name) {
   @return map-get($colors, $color-name);
 }
-
-$font-main: "Noto Serif", serif;
-$font-secondary: "Montserrat", sans-serif;
 
 // MIXIN
 

@@ -21,41 +21,20 @@ class Project {
     }
 }
 
-const project1 = new Project("Sales",
-    "Feature under development",
-    "ideas/placeholder/assets/images/hands-1063442_1920.jpg",
-    "https://www.facebook.com",
-    ["Bootstrap"]);
-
-const Project2 = new Project(
-    "Marketing",
-    "Coming soon",
-    "ideas/placeholder/assets/images/industry-3087393_1920.jpg",
-    "https://www.amazon.com",
-    ["SASS"]
-)
-
-const Project3 = new Project("Finance",
-    "And this is what happens when we have a very long text that goes on and on, so much that it starts covering all of the available space and it seems it is going to overflow the containers and break any reasonable design, but no, look, the power of JavaScript allow us to implement a character limit that handles this",
-    "ideas/placeholder/assets/images/money-2724241_1920.jpg",
-    "https://www.netflix.com",
-    ["ReactJS"],
-)
-
-const Project4 = new Project(
-    "Human Resources",
-    "Just a placeholder for future content",
-    "ideas/placeholder/assets/images/paper-3213924_1920.jpg",
-    "https://www.google.com",
-    ["GatsbyJS"],
-)
-
-const Project5 = new Project(
+const Project1 = new Project(
     "Manage Global",
     "Mockup of a fictional business brochure for an app-based company that provides business solutions",
     "ideas/manage_global/assets/pexels-rebrand-cities-1367269.jpg",
     "ideas/manage_global/index.html",
     ["CSS: Bootstrap 4.5, responsivity, media queries and animations", "JavaScript: dynamic navigation bar, form validation with regular expressions, recursion, customized Bootstrap toasts and event handling for animations", "3rd party libraries: Appear on Scroll library", "Visual assets: Google Fonts, Adobe Colors, Font-Awesome icons, favicon.io, Royalty-free images (Pixabay and Pexels)", "Design tools: Photoshop for customized iPhone image"]
+)
+
+const Project2 = new Project(
+    "Personal Portfolio",
+    "My personal website and Portfolio",
+    "ideas/personal_portfolio/portfolio-sergie.png",
+    "https://sergie.net",
+    ["CSS: SASS, BEM CSS, responsivity, media queries and animations", "JavaScript: dynamic navigation bar, object-oriented programming, ES6 features", "Visual assets: Google Fonts, Adobe Colors, Font-Awesome icons, favicon.io, Royalty-free images (Pixabay and Pexels)", "Design tools: Photoshop for customized iPhone image"]
 )
 
 // GENERATE CARDS AND PREVIEW

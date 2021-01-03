@@ -354,13 +354,14 @@
             <div class="row">
               <div class="form-item col-lg-4 col-md-6 col-sm-12">
                 <div>
-                  <legend>Name *</legend>
+                  <label for="name">Name *</label>
                   <input
                     type="text"
                     class="form-item-field"
                     maxlength="40"
                     placeholder="Your name"
                     id="name"
+                    name="name"
                   />
                   <small class="error-message"
                     >This message should not be visible</small
@@ -369,13 +370,14 @@
               </div>
               <div class="form-item col-lg-4 col-md-6 col-sm-12">
                 <div>
-                  <legend>E-mail *</legend>
+                  <label for="email">E-mail *</label>
                   <input
                     type="email"
                     class="form-item-field"
                     maxlength="60"
                     placeholder="Your E-mail"
                     id="email"
+                    name="email"
                   />
                   <small class="error-message"
                     >You are not supposed to be seeing this</small
@@ -383,9 +385,9 @@
                 </div>
               </div>
               <div class="form-item col-lg-4 col-md-6 col-sm-12">
-                <legend>Topic</legend>
+                <label for="topic"> Topic</label>
 
-                <select class="form-item-field">
+                <select class="form-item-field" name="topic">
                   <option selected>Our plans</option>
                   <optgroup label="Our services">
                     <option>Business analytics</option>
@@ -399,12 +401,13 @@
             </div>
           </fieldset>
           <div class="form-item">
-            <legend>Message *</legend>
+            <label for="message"> Message *</label>
             <textarea
               class="form-item-field"
               rows="5"
               placeholder="Leave your message here"
               id="message"
+              name="message"
             ></textarea>
             <small class="error-message">Ignore me</small>
           </div>
