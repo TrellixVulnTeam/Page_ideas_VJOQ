@@ -17,5 +17,5 @@ Version 1.1: First actual project, "Manage Global" has been included. Minor text
 
 1.1.2: minor tag adjustment in the form in "manage global"
 
-1.2: Removed placeholder projects and added personal portfolio. Expanded "more resources" section.
+1.2: Removed placeholder projects and added personal portfolio. Expanded "more resources" section. Added text that appears if client's browser does not support some features.
 More currently being developed...
