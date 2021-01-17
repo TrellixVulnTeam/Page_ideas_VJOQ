@@ -272,10 +272,6 @@ body {
   .not-supported {
     display: none; } }
 
-@supports (display: flex) and (display: grid) and ((perspective: 10px) or (-moz-perspective: 10px) or (-webkit-perspective: 10px) or (-ms-perspective: 10px)) and ((-moz-clip-path: polygon(0 0, 60% 0, 40% 100%, 0% 100%)) or (-webkit-clip-path: polygon(0 0, 60% 0, 40% 100%, 0% 100%)) or (clip-path: polygon(0 0, 60% 0, 40% 100%, 0% 100%))) and ((-webkit-transform: translate(-50%, -50%) rotate(-130deg)) or (-ms-transform: translate(-50%, -50%) rotate(-130deg)) or (transform: translate(-50%, -50%) rotate(-130deg))) and ((-webkit-background-clip: text) or (-webkit-text-fill-color: transparent) or (-moz-background-clip: text)) and (animation: change-position-shadow ease-in 1.5s forwards) {
-  .not-supported {
-    display: none; } }
-
 .not-supported {
   padding: 0;
   margin: 0;
@@ -290,6 +286,13 @@ body {
   padding: 5px;
   background-color: #4f5b68;
   z-index: 1; }
+
+#closeSupported {
+  border-radius: 50%;
+  color: #ddd;
+  cursor: pointer; }
+  #closeSupported:hover {
+    text-decoration: underline; }
 
 #options-menu {
   min-width: 250px;
