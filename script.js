@@ -112,7 +112,7 @@ window.addEventListener("load", () => {
     card.addEventListener("mouseenter", () => {
       previewTitle.innerHTML = page.title;
 
-      previewDescription.innerHTML = `${page.description}. <br> This page's code is <u><b>${codeAvailable}</b></u> available on this GitHub repository. <br> <br> This project was made using - ${technologies}.`;
+      previewDescription.innerHTML = `${page.description}. <br> <br> This page's code is <u><b>${codeAvailable}</b></u> available on this GitHub repository. <br> <br> This project was made using - ${technologies}.`;
     });
   });
 });

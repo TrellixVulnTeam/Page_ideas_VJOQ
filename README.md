@@ -9,6 +9,7 @@ The CSS of the project was made with SASS (SCSS more specifically), as well as t
 
 Updates:  
 2.0 Now being developed.
+Link to Mini-apps added;
 Description mentions if the code is available on the repository;
 @supports text now closable.
 
