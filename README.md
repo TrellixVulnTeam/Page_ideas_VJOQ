@@ -9,7 +9,8 @@ The CSS of the project was made with SASS (SCSS more specifically), as well as t
 
 Updates:  
 2.0 Now being developed.
-@supports text now closable
+Description mentions if the code is available on the repository;
+@supports text now closable.
 
 1.2: Removed placeholder projects and added personal portfolio. Expanded "more resources" section. Added text that appears if client's browser does not support some features.
 

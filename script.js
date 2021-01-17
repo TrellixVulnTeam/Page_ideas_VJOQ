@@ -9,12 +9,13 @@ closeSupported.addEventListener("click", () => {
 const pages = [];
 
 class Project {
-  constructor(title, description, image, url, techs) {
+  constructor(title, description, image, url, techs, code) {
     this.title = title;
     this.description = description;
     this.image = image;
     this.url = url;
     this.techs = techs;
+    this.code = code;
     Project.addInstance(this);
   }
   static addInstance(item) {
@@ -39,7 +40,8 @@ const Project1 = new Project(
     "3rd party libraries: Appear on Scroll library",
     "Visual assets: Google Fonts, Adobe Colors, Font-Awesome icons, favicon.io, Royalty-free images (Pixabay and Pexels)",
     "Design tools: Photoshop for customized iPhone image",
-  ]
+  ],
+  true
 );
 
 const Project2 = new Project(
@@ -52,7 +54,8 @@ const Project2 = new Project(
     "JavaScript: dynamic navigation bar, object-oriented programming, ES6 features",
     "Visual assets: Google Fonts, Adobe Colors, Font-Awesome icons, favicon.io, Royalty-free images (Pixabay and Pexels)",
     "Design tools: Photoshop for customized iPhone image",
-  ]
+  ],
+  false
 );
 
 // GENERATE CARDS AND PREVIEW
@@ -101,9 +104,15 @@ window.addEventListener("load", () => {
     cardGrid.appendChild(card);
 
     let technologies = page.techs.map((tech) => "<br> " + tech);
+    let codeAvailable = "";
+
+    if (!page.code) {
+      codeAvailable = "not";
+    }
     card.addEventListener("mouseenter", () => {
       previewTitle.innerHTML = page.title;
-      previewDescription.innerHTML = `${page.description}. <br> <br> This project was made using - ${technologies}.`;
+
+      previewDescription.innerHTML = `${page.description}. <br> This page's code is <u><b>${codeAvailable}</b></u> available on this GitHub repository. <br> <br> This project was made using - ${technologies}.`;
     });
   });
 });
