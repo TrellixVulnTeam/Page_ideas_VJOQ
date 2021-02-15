@@ -1,4 +1,5 @@
 # Page_ideas
+NOTE: This project has been halted and now continues on the mini-apps project: https://github.com/Sergie-AGA/Mini_Apps
 
 <<<<<<< HEAD
 Current code version: 2.0 (under development)
